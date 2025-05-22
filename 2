@@ -1,0 +1,12 @@
+#двовимірний масив 7x7, заповнений нулями
+size = 7
+array = [[0] * size for _ in range(size)]
+
+
+#заповнюємо матрицю згідно з шаблоном
+for i in range(7):
+    for j in range(7 - i):
+        array[i][j] = i + j + 1 
+
+for r in array:
+    print(*r)
