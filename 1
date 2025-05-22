@@ -1,0 +1,11 @@
+n = int(input("n = "))
+print(f"Введіть {n} елементів масиву:")
+arr = [int(input()) for _ in range(n)]
+print("масив:", arr)
+positive_elements = [x for x in arr if x > 0]
+
+# перевіряємо, чи є додатні елементи, і знаходимо максимальний додатній елемент
+if positive_elements:
+    max_positive = max(positive_elements)
+    print("Максимальний додатній елемент:", max_positive)
+else:    print("У масиві немає додатніх елементів.")
